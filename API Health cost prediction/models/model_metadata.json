@@ -1,0 +1,83 @@
+{
+    "model_name": "XGBoost Regressor",
+    "task": "regression",
+    "target": "charges",
+    "features": [
+        "age",
+        "bmi",
+        "children",
+        "sex",
+        "smoker",
+        "region"
+    ],
+    "categorical_features": [
+        "sex",
+        "smoker",
+        "region"
+    ],
+    "numerical_features": [
+        "age",
+        "bmi",
+        "children"
+    ],
+    "best_params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100,
+        "subsample": 0.8
+    },
+    "metrics": {
+        "r2_train": 0.8766,
+        "r2_test": 0.9043,
+        "rmse_test": 3902.92,
+        "mae_test": 2392.35
+    },
+    "feature_importances": [
+        {
+            "Feature": "onehot__smoker_no",
+            "Importance": 0.8207982778549194
+        },
+        {
+            "Feature": "numeric__bmi",
+            "Importance": 0.0838552936911583
+        },
+        {
+            "Feature": "numeric__age",
+            "Importance": 0.04740726947784424
+        },
+        {
+            "Feature": "numeric__children",
+            "Importance": 0.014340277761220932
+        },
+        {
+            "Feature": "onehot__region_northeast",
+            "Importance": 0.00939535815268755
+        },
+        {
+            "Feature": "onehot__region_northwest",
+            "Importance": 0.008652652613818645
+        },
+        {
+            "Feature": "onehot__region_southwest",
+            "Importance": 0.008003789000213146
+        },
+        {
+            "Feature": "onehot__region_southeast",
+            "Importance": 0.00392755726352334
+        },
+        {
+            "Feature": "onehot__sex_female",
+            "Importance": 0.0036193756386637688
+        },
+        {
+            "Feature": "onehot__sex_male",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "onehot__smoker_yes",
+            "Importance": 0.0
+        }
+    ],
+    "model_path": "models\\health_cost_model.joblib"
+}

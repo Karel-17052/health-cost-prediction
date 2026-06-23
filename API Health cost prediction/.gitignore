@@ -1,0 +1,32 @@
+# Fichiers générés par Python
+# models/ --> NE PAS ignorer ! Le .joblib doit être commit pour Render
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fichiers de données (à ne pas commit si volumineux)
+# *.csv  # décommenter si le CSV est trop grand
